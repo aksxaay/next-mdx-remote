@@ -1,6 +1,9 @@
+import getSortedLocalDocuments from "@/lib/localHelper";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const localDocuments = await getSortedLocalDocuments();
+  console.log('localDocuments :', localDocuments);
   return (
     <>
       <div className="mt-5">
