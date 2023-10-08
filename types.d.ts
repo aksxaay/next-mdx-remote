@@ -4,6 +4,6 @@ type MDXDocument = {
   title: string,
   description: string?,
   date: string?,
-  body: string?,
+  body: MDX?,
   slugAsParams: string,
 }
